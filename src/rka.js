@@ -1,10 +1,10 @@
 import hasha from 'hasha';
 
-export function RKA(str, pattern){
-    let hpattern = hasha(pattern);
-    let hs = hasha(str);
+export default function (str, pattern){
     let strlength = str.length;
     let patternlength = pattern.length;
+    let hpattern = hasha(pattern);
+    let hs = hasha(str.substr(0, pattern.length));
     if(strlength < patternlength){
         return -1;
     }
