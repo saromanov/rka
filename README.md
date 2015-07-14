@@ -1,4 +1,4 @@
-# rka
+# rka [![Build Status](https://travis-ci.org/saromanov/rka.svg?branch=master)](https://travis-ci.org/saromanov/rka)
 
 ## Usage
 ```javascript
