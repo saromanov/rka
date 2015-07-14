@@ -8,9 +8,11 @@ export default function (str, pattern){
     if(strlength < patternlength){
         return -1;
     }
-    for(let i = 0;i < strlength - patternlength+1;++i){
+    for(let i = 1;i <= strlength - patternlength+1;++i){
         if(hpattern == hs){
-            return i-1;
+            if(str.substring(i-1, i + patternlength-1) == pattern){
+                return i-1;
+            }
         }
         hs = hasha(str.substring(i,i+patternlength));
     }
