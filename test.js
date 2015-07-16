@@ -42,6 +42,10 @@ describe('Test substring contains in the string', function() {
     it('should return index from last position of substring2', function(){
         assert.equal(rka(str, "e"), 4); 
     });
+
+    it('should return 0', function(){
+        assert.equal(rka("a","a"), 0);
+    });
 });
 
 describe('Test substring not cointains in the string', function(){
