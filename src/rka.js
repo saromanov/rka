@@ -3,6 +3,9 @@ import hasha from 'hasha';
 export default function (str, pattern){
     let strlength = str.length;
     let patternlength = pattern.length;
+    if(str == pattern){
+        return 0;
+    }
     let hpattern = hasha(pattern);
     let hs = hasha(str.substring(0, pattern.length));
     if(strlength < patternlength){
