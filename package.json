@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/saromanov/rka#readme",
   "dependencies": {
-    "hasha": "^1.0.1",
+    "hasha": "^2.0.0",
     "core-js": "^0.6.0"
   },
   "devDependencies": {
